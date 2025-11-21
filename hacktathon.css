@@ -1,0 +1,188 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Hide Scrollbar */
+body::-webkit-scrollbar { display: none; }
+body { scrollbar-width: none; }
+
+/* ============ HERO BG ============ */
+.mainHeroSection {
+    background: linear-gradient(115deg, #fff7df 0%, #ffffff 50%, #ffe9b8 100%);
+    padding: 60px 0;
+}
+
+/* ============ NAVBAR ============ */
+.customNavBar {
+    padding: 12px 0;
+}
+
+.navLinkItem {
+    color: #333 !important;
+    font-weight: 500;
+    padding: 6px 12px;
+    transition: 0.25s;
+}
+
+.navLinkItem:hover {
+    color: #ff8a34 !important;
+    background: #ffe9c1;
+    border-radius: 6px;
+}
+
+.socialGroup img {
+    width: 22px;
+    transition: 0.25s;
+}
+
+.socialGroup img:hover {
+    transform: scale(1.15);
+}
+
+/* ============ CONTACT BUTTON ============ */
+.btnPrimaryContact {
+    padding: 8px 28px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #ffd86c 0%, #ff983b 100%);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    transition: 0.3s;
+}
+
+.btnPrimaryContact:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 14px rgba(255, 161, 60, 0.4);
+}
+
+/* ============ HERO TEXT ============ */
+.heroHeading {
+    font-size: 3.2rem;
+    font-weight: 800;
+}
+
+.heroDescription {
+    margin: 25px 0 35px 0;
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 450px;
+}
+
+/* ============ START BUTTON ============ */
+.btnGetStarted {
+    padding: 12px 48px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #ff5d5d 0%, #f9d423 100%);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    font-size: 1rem;
+    transition: 0.35s;
+}
+
+.btnGetStarted:hover {
+    transform: scale(1.07);
+    box-shadow: 0px 8px 16px rgba(255, 80, 80, 0.4);
+}
+
+/* ============ HERO IMAGE ============ */
+.heroGraphic img {
+    max-width: 100%;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
+
+/* =====================================================
+                 RESPONSIVE SECTION
+===================================================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .heroHeading {
+        text-align: center;
+        font-size: 2.8rem;
+    }
+
+    .heroDescription {
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .btnGetStarted {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .heroGraphic img {
+        width: 80%;
+        margin: 35px auto;
+        display: block;
+    }
+}
+
+/* Mobile Landscape & Small Tablets */
+@media (max-width: 768px) {
+
+    .heroHeading {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .heroDescription {
+        max-width: 350px;
+        font-size: 1rem;
+    }
+
+    .heroContentArea {
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/* Phones */
+@media (max-width: 576px) {
+
+    .mainHeroSection {
+        padding: 40px 0;
+    }
+
+    .heroHeading {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+
+    .heroDescription {
+        max-width: 300px;
+        margin: 20px auto;
+    }
+
+    .btnGetStarted {
+        width: 70%;
+        margin: 15px auto 40px auto;
+    }
+
+    .heroGraphic img {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .navLinkItem {
+        text-align: center;
+        padding: 10px 0;
+    }
+}
