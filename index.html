@@ -1,54 +1,110 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="hacktathon.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Robots</title>
 </head>
 
 <body>
-    <div class="container">
-
-        <!-- ========== NAVBAR ========== -->
-        <nav class="navbar">
-            <a class="logo" href="#">
-                <img src="https://umra-badar20.github.io/Hackathon-Practice/images/SiteLogo.svg" alt="Site Logo">
-            </a>
-
-            <!-- Checkbox hack for mobile menu -->
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">&#9776;</label>
-
-            <ul class="nav-menu">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Team</a></li>
-                <li><button class="btn-contact">Contact Us</button></li>
-                <li class="social-icons">
-                    <img src="https://umra-badar20.github.io/Hackathon-Practice/images/social.svg" alt="">
-                    <img src="https://umra-badar20.github.io/Hackathon-Practice/images/social%20(1).svg" alt="">
-                    <img src="https://umra-badar20.github.io/Hackathon-Practice/images/social%20(2).svg" alt="">
-                </li>
-            </ul>
+    <div class="container myHeader">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand  ms-5 ps-4" href="#"><img src="https://umra-badar20.github.io/Hackathon-Practice/images/SiteLogo.svg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-black text-center" aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black text-center" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black text-center" href="#">Pricing</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link text-black text-center" href="#">Gallery</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link text-black text-center" href="#">Team</a>
+                        </li>
+                         <li class="nav-item mx-5 d-flex justify-content-center">
+                          <button class="contactBtn py-2">Contact Us</button>
+                        </li>
+                       <li class="nav-item px-2 d-flex justify-content-center">
+                            <img class="mx-2 mt-2" src="https://umra-badar20.github.io/Hackathon-Practice/images/social.svg" alt="">
+                            <img class="mx-2 mt-2" src="https://umra-badar20.github.io/Hackathon-Practice/images/social%20(1).svg" alt="">
+                            <img class="mx-2 mt-2" src="https://umra-badar20.github.io/Hackathon-Practice/images/social%20(2).svg" alt="">
+                       </li>
+                    </ul>
+                    
+                </div>
+            </div>
         </nav>
-
-        <!-- ========== HERO SECTION ========== -->
-        <section class="hero">
-            <div class="hero-text">
-                <h1>Give robots <br>a second chance</h1>
-                <p>We save 1 million robots from destruction every year and find a new home for them. Let's save the robots!</p>
-                <button class="btn-start">Get Started</button>
+        <div class="row flex-sm-column-reverse flex-lg-row">
+            <div class="col my-auto mx-auto ms-5 ps-5">
+                <h1 class="text-uppercase ">Give robots <br>a second chance</h1>
+                <p class="my-5 myPara">We save 1 million robots from destruction every year and find <br> a new home for them. Let's save the robots!</p>
+                <button class="StartedBtn">Get Started</button>
             </div>
-            <div class="hero-image">
-                <img src="https://umra-badar20.github.io/Hackathon-Practice/images/robot%201.svg" alt="Robot">
+            <div class="col">
+                <img class="img-fluid" src="https://umra-badar20.github.io/Hackathon-Practice/images/robot%201.svg" alt="">
             </div>
-        </section>
-
+        </div>
     </div>
+
+
+    
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
 
 </html>
