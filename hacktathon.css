@@ -1,218 +1,55 @@
-/* ========== GENERAL RESET ========== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+.myHeader {
+    background: linear-gradient(90deg, #FFEFBA 0%, #FFFFFF 100%);
+    overflow-x: hidden;
 }
 
-/* ========== BODY BACKGROUND ========== */
-body {
-    background: linear-gradient(135deg, #f9f9ff, #e6f7ff);
-}
-
-/* ========== CONTAINER ========== */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* ========== NAVBAR ========== */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 0;
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    z-index: 10;
-}
-
-.navbar .logo img {
-    height: 50px;
-}
-
-/* Nav Menu */
-.nav-menu {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    transition: all 0.3s ease;
-}
-
-.nav-menu li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: all 0.3s;
-}
-
-.nav-menu li a:hover {
-    color: #007bff;
-}
-
-/* Gradient Contact Button */
-.nav-menu .btn-contact {
-    padding: 8px 20px;
-    background: linear-gradient(135deg, #ffa64d, #ff7a33);
-    color: white;
+.contactBtn {
+    width: 140;
+    height: 40;
+    opacity: 1;
+    top: 32px;
+    left: 1033px;
+    gap: 10px;
+    border-radius: 30px;
+    padding-top: 5px;
+    padding-right: 26px;
+    padding-bottom: 5px;
+    padding-left: 26px;
+    background: linear-gradient(90deg, #FFE259 0%, #FFA751 100%);
     border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: transform 0.3s, background 0.3s;
-}
-
-.nav-menu .btn-contact:hover {
-    background: linear-gradient(135deg, #ff7a33, #ffa64d);
-    transform: scale(1.05);
-}
-
-.nav-menu .social-icons img {
-    width: 25px;
-    margin-left: 5px;
-    transition: transform 0.3s;
-}
-
-.nav-menu .social-icons img:hover {
-    transform: scale(1.2);
-}
-
-/* Mobile menu toggle */
-.menu-icon {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
-}
-
-/* Hide checkbox */
-#menu-toggle {
-    display: none;
-}
-
-/* ========== HERO SECTION ========== */
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px 40px;
-    flex-wrap: wrap;
-    border-radius: 20px;
-    background: linear-gradient(135deg, #f0f8ff, #d9f0ff);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    animation: fadeIn 1s ease forwards;
-}
-
-.hero-text {
-    flex: 1;
-    min-width: 300px;
-    padding-right: 30px;
-    animation: slideInLeft 1s ease forwards;
-}
-
-.hero-text h1 {
-    font-size: 48px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.hero-text p {
-    margin-bottom: 30px;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #555;
-}
-
-/* Gradient Hero Button */
-.btn-start {
-    padding: 12px 30px;
-    background: linear-gradient(135deg, #6ec1ff, #3399ff);
     color: white;
+}
+
+.StartedBtn {
+    width: 200;
+    height: 50;
+    opacity: 1;
+    top: 570px;
+    left: 149px;
+    gap: 10px;
+    border-radius: 30px;
+    padding-top: 9px;
+    padding-right: 45px;
+    padding-bottom: 9px;
+    padding-left: 45px;
+    border-width: 1px;
+    background: linear-gradient(90deg, #FF4E50 0%, #F9D423 100%);
+    color: #fff;
     border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: transform 0.3s, background 0.3s;
+
 }
-
-.btn-start:hover {
-    background: linear-gradient(135deg, #3399ff, #6ec1ff);
-    transform: scale(1.05);
-}
-
-.hero-image {
-    flex: 1;
-    min-width: 300px;
-    text-align: center;
-    animation: slideInRight 1s ease forwards;
-}
-
-.hero-image img {
-    max-width: 100%;
-    height: auto;
-    transition: transform 0.5s;
-}
-
-.hero-image img:hover {
-    transform: translateY(-10px);
-}
-
-/* ========== ANIMATIONS ========== */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes slideInLeft {
-    from { opacity: 0; transform: translateX(-50px);}
-    to { opacity: 1; transform: translateX(0);}
-}
-
-@keyframes slideInRight {
-    from { opacity: 0; transform: translateX(50px);}
-    to { opacity: 1; transform: translateX(0);}
-}
-
-/* ========== RESPONSIVE ========== */
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 20px;
-    }
-
-    .hero-text {
-        padding: 0;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-
-    .nav-menu {
-        position: absolute;
-        top: 70px;
-        right: 0;
-        background-color: rgba(255,255,255,0.95);
-        flex-direction: column;
-        width: 200px;
-        border-radius: 10px;
-        display: none;
-        gap: 10px;
-        padding: 10px;
-        transition: max-height 0.5s ease;
-        overflow: hidden;
-        max-height: 0;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    }
-
-    /* Show menu when checkbox is checked */
-    #menu-toggle:checked + .menu-icon + .nav-menu {
+@media (max-width: 576px){
+    .row{
+        flex-direction: column-reverse;
         display: flex;
-        max-height: 500px;
+        align-items: center;
     }
-}
+    .myPara{
+        width: 300px;
+        text-align: center;
+    }
+    .StartedBtn{
+        margin-left: 60px;
+        margin-bottom: 50px;
+    }
+ }
